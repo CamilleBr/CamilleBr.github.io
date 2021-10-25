@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* Style */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+::selection {
+  background: #333;
+  color: #FFF;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+  border: thin solid lightgray;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border: thin solid gray;
+}
+
+/* --------------------------
+ Html
+ ----------------------------- */
+/** {
+    box-sizing:border-box;
+}*/
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------
+ Body
+ ----------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  /* background-color: #DBE2EF; */
+  line-height: 1.5em;
+  color:#2a2a2b;
+}
+
+h1 {
+  /* margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 40%; */
+  color: #3F72AF;
+}
+
+#site-wrapper{
+  margin: 0 4%;
+  max-width: 1280px;
+}
+
+#content-wrapper{
+  margin-left: 280px;
+  width: auto;
+}
+
+/* --------------------------
+ Container
+ ----------------------------- */
+a {
+  color: #F9F7F7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #DBE2EF;
+}
+
+/* --------------------------
+ Header
+ ----------------------------- */
+
+.avatarImage{
+  border-radius: 50%;
+  max-width: 160px;
+  border: 1px solid #bebebe;
+  padding: 4px;
+}
+
+
+.headerTitle {
+  color: #3F72AF;
+  font-size: 1.4em;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+#header-wrapper{
+  /* position: -webkit-sticky; */
+  position: fixed;
+  padding-top: 40px;
+  padding-left: 40px;
+  width: 160px;
+}
+
+.headerBio{
+  font-size: 0.9em;
+  font-style: italic;
+}
+.headerLinks ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.headerLinks li{
+  /* background-position: -4px 2px; */
+  background-repeat: no-repeat;
+  background-position: 0 0.45em;
+  /* line-height: 1.5; */
+  background-size: 1.4em;
+  text-indent: 2em;
+  padding-top: 0.4em;
+  font-size: 0.9em;
+}
+
+.headerLinks a{
+  color:#2a2a2b;
+}
+
+.headerLinks a:hover {
+  text-decoration: underline;
+  color:#3F72AF;
+}
+
+/* --------------------------
+ Footer
+ ----------------------------- */
+footer {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  color: gray;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  color: #3F72AF;
+  border-top: 1px solid #bebebe;
+  width: 80%;
+  margin:auto;
+}
+
+/* --------------------------
+ Section
+ ----------------------------- */
+section {
+  margin: 0px auto 0px auto;
+  padding-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  /* text-align: center; */
+}
+
+section:first-of-type{
+  padding-top: 40px;
+}
+
+section a {
+  color: #3F72AF;
+}
+section a:hover {
+  text-decoration: underline;
+  color: #112D4E;
+}
+
+p {
+  /* color: #3F72AF; */
+  color: #2a2a2b;
+  /* font-size: 0.9em; */
+  /* line-height: 25px; */
+  margin-bottom: 0;
+  margin-left: 5%;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+}
+
+/* --------------------------
+ About
+ ----------------------------- */
+#about p {
+  padding-bottom: 1em;
+}
+
+/* --------------------------
+Contact
+ ----------------------------- */
+#contact p {
+  font-size: 100%;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* --------------------------
+ Work
+ ----------------------------- */
+ul.simpleList li {
+  list-style-type: circle;
+  font-size: 90%;
+  font-style: italic;
+  margin-top: 2px;
+  list-style-position: inside;
+}
+
+/* --------------------------
+ Media object (WORK)
+ ----------------------------- */
+.Media {
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+}
+
+.Media p {
+  text-align: left;
+  margin-left: 1em;
+  /* margin-bottom: 0.5em; */
+}
+
+.Media-body {
+  flex: 1;
+}
+
+.Media-title {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.Media-conference {
+  font-style: italic;
+}
+
+@media (min-width: 480px) {
+  .Media-figure {
+    padding-right: 1em;
+    width: 30%;
+    max-width: 200px;
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .Media-figure {
+    padding-right: 0;
+    width: 70%;
+    align-self: center;
+  }
+
+  .Media {
+    flex-direction: column;
+  }
+
+  .Media-body {
+    padding-top: 1em;
+  }
+}
+@media (min-width: 0px) and (max-width: 650px) {
+  .title-wide {
+    display: none;
+  }
+
+  .title-narrow {
+    display: inline;
+  }
+}
+@media (min-width: 651px) {
+  .title-narrow {
+    display: none;
+  }
+
+  .title-wide {
+    display: inline;
+  }
+}
