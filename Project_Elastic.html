@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Camille Brunel</title>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Camille Brunel"/>
+	<meta property="og:site_name" content="Camille Brunel"/>
+        <meta property="og:url" content="https://camillebr.github.io/"/>
+        <meta property="og:description" content="Personal website of Camille Brunel, PhD in Computer Graphics"/>
+	<meta property="og:locale" content="en_US"/>
+	<link rel="canonical" href="https://camillebr.github.io/"/>
+        <link rel="stylesheet" href="css/style.css" media="screen"/>
+    </head>
+    <body>
+        <div class="ProjectPage">
+        
+        	<!--Title-->
+		    <h1 class="ProjectTitle">A Time-independent Deformer for Elastic Contacts</h1>
+		    <!--Authors-->
+            <div class="ProjectAuthors">
+                <a href="https://camillebr.github.io/" target="_blank">Camille BRUNEL</a> Inria, Univ. Bordeaux, France <br>
+                <a href="https://www.labri.fr/perso/pbenard/" target="_blank">Pierre BENARD</a>, LaBRI (UMR 5800, CNRS, Univ. Bordeaux), France <br>
+                <a href="https://www.labri.fr/perso/guenneba/" target="_blank">Gaël GUENNEBAUD</a>, Inria, Univ. Bordeaux, France <br>
+            </div>
+		    <!--Teaser-->
+            <img class="ProjectImage" src="images/teaser_Elastic.svg"
+            alt="Teaser image for the paper entitled A Time-independent Deformer for Elastic Contacts"/>
+		    <!--Abstract-->
+            <div class="ProjectAbstract">
+                <h2>Abstract</h2>
+                <p class="justifier"> We present a purely geometric, time-independent deformer resolving local contacts between elastic objects, including self-collisions between adjacent parts of the same object that often occur in character skinning animation. Starting from multiple meshes in intersection, our deformer first computes the parts of the surfaces remaining in contact, and then applies a procedural displacement with volume preservation. Although our deformer processes each frame independently, it achieves temporally continuous deformations with artistic control of the bulge through few pseudo-stiffness parameters. The plausibility of the deformation is further enhanced by anisotropically spreading the volume-preserving bulge. The result is a robust, real-time deformer that can handle complex geometric configurations such as a ball squashed by a hand, colliding lips, bending fingers, etc.</p>
+            </div>
+		    <!--Video-->
+            <!-- <div class="ProjectVideo">
+                <h2>Video</h2>
+            </div> -->
+		    <!--Links-->
+            <div class="ProjectLinks">
+                <h2>Downloads</h2>
+                <div class="card_container">
+                    <div class="card">
+                        <a href="https://hal.inria.fr/hal-03227883/document" target="_blank">
+                            <img src="images/DeformerElastic_paper_square.png" alt="Paper" style="width:100%">
+                            <p>Paper</p>
+                        </a>    
+                    </div>
+                    <div class="card">
+                        <a href="https://vimeo.com/547377135" target="_blank">
+                            <img src="images/video_centered.png" alt="Video" style="width:100%">
+                            <p>Video</p>
+                        </a>
+                    </div>
+                    <div class="card disabled_card">
+                        <img src="images/github_centered.png" alt="Code" style="width:100%">
+                        <p>Code</p>
+                        <!-- <p class="smalltext">(coming soon)</p>  -->
+                    </div>
+                    <div class="card disabled_card">
+                        <img src="images/video_centered.png" alt="Talk" style="width:100%">
+                        <p>Talk</p>
+                        <!-- <p class="smalltext">(coming soon)</p>  -->
+                    </div>
+                </div>
+            </div>
+            <div class="ProjectBibtex">
+                <h2>Bibtex</h2>
+                <pre> 
+<code>@article{Brunel:2021,
+    author = {Brunel, Camille and B\'{e}nard, Pierre and Guennebaud, Ga\"{e}l},
+    title = {A Time-Independent Deformer for Elastic Contacts},
+    journal = {ACM Trans. Graph.},
+    volume = {40},
+    number = {4},
+    year = {2021},
+    publisher = {Association for Computing Machinery},
+    url = {https://doi.org/10.1145/3450626.3459879},
+    doi = {10.1145/3450626.3459879}
+}</code>                    
+                </pre>
+            </div>
+
+            <!--FOOTER-->
+            <footer>&copy; 2021 Camille Brunel </footer>
+        </div>
+    </body>
+</html>
